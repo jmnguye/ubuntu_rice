@@ -7,19 +7,20 @@ else
 	
 	case $1 in
 	hdmi)
-		echo "---" | tee -a /tmp/polybarhdmi1.log
-		polybar hdmi1 >>/tmp/polybarhdm1.log 2>&1 &
+		outputValues=HDMI-1
 		;;
 	lvds)
-		echo "---" | tee -a /tmp/polybarlvds1.log
-		polybar lvds1 >>/tmp/polybarlvds1.log 2>&1 &
+		outputValues=LVDS-1
 		;;
 	dual)
-		echo "---" | tee -a /tmp/polybarlvds1.log /tmp/polybarhdmi1.log
-		polybar lvds1 >>/tmp/polybarlvds1.log 2>&1 &
-		polybar hdmi1 >>/tmp/polybarhdm1.log 2>&1 &
+		outputValues="HDMI-1 LVDS-1"
 		;;
 	esac
-	
+
+	for m in $(echo ${outputValues}); do
+		echo "---" | tee -a /tmp/polybar${m}.log /tmp/polybar${m}.log
+		MONITOR=$m polybar --reload mybar >> /tmp/polybar${m}.log 2>&1 &
+	done
+
 	echo "Bars launched..."
 fi
