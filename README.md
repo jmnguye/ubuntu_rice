@@ -1,4 +1,4 @@
-# My attempt to get some personal rice config :bowtie:
+# My attempt to get some personal rice config :v:
 
 ## My personal config for my x201
 * Tiling window manager [i3](https://www.github.com/Airblader/i3)
