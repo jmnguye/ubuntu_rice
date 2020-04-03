@@ -99,9 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # screen alias
-alias hdmi="xrandr --output HDMI-1 --auto --rate 144.00;xrandr --output LVDS-1 --off"
-alias lvds="xrandr --output LVDS-1 --auto;xrandr --output HDMI-1 --off"
-alias dual="xrandr --output LVDS-1 --auto --primary;xrandr --output HDMI-1 --auto --rate 144.00 --right-of LVDS-1"
+alias hdmi="xrandr --output HDMI-1 --auto --rate 144.00;xrandr --output LVDS-1 --off; $HOME/.config/polybar/launch.sh hdmi"
+alias lvds="xrandr --output LVDS-1 --auto;xrandr --output HDMI-1 --off; $HOME/.config/polybar/launch.sh lvds"
+alias dual="xrandr --output LVDS-1 --auto --primary;xrandr --output HDMI-1 --auto --rate 144.00 --right-of LVDS-1; $HOME/.config/polybar/launch.sh dual"
 
 # random personal aliases
 alias edit_config="vi $HOME/.config/i3/config"
