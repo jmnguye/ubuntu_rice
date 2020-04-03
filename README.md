@@ -1,4 +1,4 @@
-# ubuntu_rice
+# My attempt to get some personal rice config :bowtie:
 
 ## My personal config for my x201
 * Tiling window manager [i3](https://www.github.com/Airblader/i3)
