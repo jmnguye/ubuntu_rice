@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+killall -q polybar
 
 for m in $(xrandr | grep " connected" | awk '{print $1}' | xargs); do
 	echo "---" | tee -a /tmp/polybar${m}.log /tmp/polybar${m}.log
