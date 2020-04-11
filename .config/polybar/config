@@ -420,7 +420,7 @@ format-charging = <animation-charging> <label-charging>
 format-discharging = <animation-discharging> <label-discharging>
 ;format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+;format-full-prefix = " "
 ;format-full-prefix-foreground = ${colors.foreground-alt}
 ;format-full-underline = ${self.format-charging-underline}
 format-full-underline = ${colors.foreground-alt}
@@ -431,7 +431,7 @@ label-full = "100%"
 ;ramp-capacity-2 = ♨
 ;ramp-capacity-foreground = ${colors.foreground-alt}
 
-format-charging-prefix = " "
+;format-charging-prefix = " "
 format-charging-underline = ${colors.foreground-alt}
 animation-charging-0 = 
 animation-charging-1 = 
@@ -441,7 +441,7 @@ animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 label-charging = Charging %percentage%%
 
-format-discharging-prefix = " "
+;format-discharging-prefix = " "
 format-discharging-underline = ${colors.foreground-alt}
 animation-discharging-0 = 
 animation-discharging-1 = 
