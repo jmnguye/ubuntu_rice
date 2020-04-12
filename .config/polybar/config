@@ -17,10 +17,8 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
 background = #222
 background-alt = #444
-;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555
 primary = #ffb52a
@@ -32,8 +30,6 @@ alert = #bd2c40
 monitor = ${env:MONITOR:}
 width = 100%
 height = 32
-;offset-x = 1%
-;offset-y = 1%
 radius = 0.0
 fixed-center = false
 
@@ -63,15 +59,6 @@ modules-right = pulseaudio memory cpu battery temperature filesystem date
 
 tray-position = right
 tray-padding = 2
-;tray-background = #0063ff
-
-;wm-restack = i3
-
-; override-redirect = true
-
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -201,8 +188,8 @@ format-unmounted = <label-unmounted>
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
 label-mounted =   %mountpoint%: %percentage_free%% of %total%
-label-mounted-background = ${colors.background-alt}
-label-mounted-foreground = #000
+;label-mounted-background = ${colors.background-alt}
+;label-mounted-foreground = #000
 label-mounted-padding = 2
 label-mounted-underline= ${colors.primary}
 
@@ -219,7 +206,7 @@ index-sort = true
 wrapping-scroll = false
 
 ; Only show workspaces on the same output as the bar
-;pin-workspaces = true
+pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = #000
