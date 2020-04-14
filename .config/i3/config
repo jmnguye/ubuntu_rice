@@ -57,6 +57,10 @@ bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+m move right
 
+# move workspace 
+bindsym $mod+b move workspace to output left
+bindsym $mod+n move workspace to output right
+
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
@@ -251,6 +255,6 @@ bindsym $mod+Shift+s exec spotify
 bindsym $mod+Shift+t exec thunderbird 
 
 exec_always compton
-exec_always wal --vte -R
+exec_always wal --vte -R -n
 #the wallpaper is set with pywal
 #exec_always feh --bg-scale ~/Images/Wallpapers/1.jpg
